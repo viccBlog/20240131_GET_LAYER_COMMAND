@@ -11,13 +11,13 @@
 下の URL から rhi をダウンロードして、ダブルクリック。その後、ライノの再起動で反映されるはずです。  
 エラーが出たら教えてください。。。  
 
-URL  
+[https://github.com/viccBlog/20240131_GET_LAYER_COMMAND/releases/tag/v2](https://github.com/viccBlog/20240131_GET_LAYER_COMMAND/releases/tag/v2)  
 
 
 ※うまく動かなければ、それぞれもマシン上で RhinoPython エディタからコンパイルも可能です。  
 プログラムはこんな感じ。  
 
-URL  
+[https://github.com/viccBlog/20240131_GET_LAYER_COMMAND/blob/main/GetLayer_cmd.py](https://github.com/viccBlog/20240131_GET_LAYER_COMMAND/blob/main/GetLayer_cmd.py)  
 
 
 インストール先はここ。何かあればここを確認する。  
