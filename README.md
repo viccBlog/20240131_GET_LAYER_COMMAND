@@ -1,9 +1,19 @@
-# GET_LAYER_COMMAND  
+# GET_LAYER_NAME_COMMAND  
+
+※ 2024/07/11  
+`GetLayer` から `GetLayerName` にコマンド名を変更しました。  
+7/11 以降にダウンロードした人(v4 以降)は、コマンド名が `GetLayerName` となります。  
+
 
 指定したオブジェクトのレイヤーのフルパスをクリップボードに貼るコマンド。  
 
-オブジェクトを選んだ状態（複数可）で `GetLayer` を実行 >> クリップボードにテキストとしてレイヤーのフルパスが入ります。  
-オブジェクトが選ばれていない状態で `GetLayer` を実行 >> オブジェクトを選ぶように促されるのでオブジェクトを選ぶと（複数可）、クリップボードにテキストとしてレイヤーのフルパスが入ります。  
+オブジェクトを選んだ状態（複数可）で `GetLayerName` を実行 >> クリップボードにテキストとしてレイヤーのフルパスが入ります。  
+オブジェクトが選ばれていない状態で `GetLayerName` を実行 >> オブジェクトを選ぶように促されるのでオブジェクトを選ぶと（複数可）、クリップボードにテキストとしてレイヤーのフルパスが入ります。  
+
+
+紹介記事はこちら  
+[https://blog.vicc.jp/entry/get-layer-command](https://blog.vicc.jp/entry/get-layer-command)  
+
 
 
 ## インストール  
@@ -11,13 +21,13 @@
 下の URL から rhi をダウンロードして、ダブルクリック。その後、ライノの再起動で反映されるはずです。  
 エラーが出たら教えてください。。。  
 
-[https://github.com/viccBlog/20240131_GET_LAYER_COMMAND/releases/tag/v2](https://github.com/viccBlog/20240131_GET_LAYER_COMMAND/releases/tag/v2)  
+[https://github.com/viccBlog/20240131_GET_LAYER_COMMAND/releases](https://github.com/viccBlog/20240131_GET_LAYER_COMMAND/releases)  
 
 
 ※うまく動かなければ、それぞれもマシン上で RhinoPython エディタからコンパイルも可能です。  
 プログラムはこんな感じ。  
 
-[https://github.com/viccBlog/20240131_GET_LAYER_COMMAND/blob/main/GetLayer_cmd.py](https://github.com/viccBlog/20240131_GET_LAYER_COMMAND/blob/main/GetLayer_cmd.py)  
+[https://github.com/viccBlog/20240131_GET_LAYER_COMMAND/blob/main/GetLayerName_cmd.py](https://github.com/viccBlog/20240131_GET_LAYER_COMMAND/blob/main/GetLayerName_cmd.py)  
 
 
 インストール先はここ。何かあればここを確認する。  
@@ -28,9 +38,8 @@ C:\Users\USER_NAME\AppData\Roaming\McNeel\Rhinoceros\7.0\Plug-ins\PythonPlugins
 ## 動作環境  
 
 下記のバージョンで動作確認しています。  
-- Windows10  
-- Rhino7 SR36  
-- Grasshopper 1.0.0007  
+- Windows10 + Rhino7 SR36  
+- Windows11 + Rhino7 SR36  
 
 
 ## モチベーション  
@@ -82,6 +91,12 @@ graph TD
 - v2  
   - 以下のエラーを解決  
     - Message: "global name 'exit' is not defined"  
+
+- v3  
+  - `GetLayer` から `GetLayerName` にコマンド名を変更  
+
+- v4  
+  - クリップボードの文字列へのソートを追加  
 
 
 ## ref  
